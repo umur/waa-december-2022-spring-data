@@ -7,14 +7,21 @@ import lombok.Setter;
 import java.util.List;
 
 @Entity
-@Getter
 @Setter
-public class Category {
+@Getter
+public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String name;
+    private String email;
+    private String password;
+    private String firstName;
+    private String lastName;
 
     @OneToMany
-    private List<Product> products;
+    private List<Review> reviews;
+
+    @OneToOne
+    private Address address;
+
 }

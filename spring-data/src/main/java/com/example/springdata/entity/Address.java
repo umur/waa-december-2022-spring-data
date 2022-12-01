@@ -4,17 +4,17 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
-
 @Entity
 @Getter
 @Setter
-public class Category {
+public class Address {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String name;
+    private String street;
+    private String zip;
+    private String city;
 
-    @OneToMany
-    private List<Product> products;
+    @OneToOne
+    private User user;
 }

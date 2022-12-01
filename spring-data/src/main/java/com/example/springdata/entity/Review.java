@@ -4,17 +4,17 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
-import java.util.List;
-
 @Entity
-@Getter
 @Setter
-public class Category {
+@Getter
+public class Review {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
-    private String name;
+    private String comment;
 
-    @OneToMany
-    private List<Product> products;
+    @ManyToOne
+    private User user;
+    @ManyToOne
+    private Product product;
 }
