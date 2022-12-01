@@ -6,14 +6,14 @@ INSERT  INTO  Category (name) VALUES ('Rocket');
 
 --Data For Product
 
-INSERT INTO Product(name,price,rating,category_id) VALUES ('Corolla',200,2.5,1);
-INSERT INTO Product(name,price,rating,category_id) VALUES ('VWPolo',400,5,1);
+INSERT INTO Product(name,price,rating,category_id) VALUES ('Corolla',25000,9.0,1);
+INSERT INTO Product(name,price,rating,category_id) VALUES ('VWPolo',36000,8.5,1);
 
-INSERT INTO Product(name,price,rating,category_id) VALUES ('Harley VRod',100,3.5,2);
-INSERT INTO Product(name,price,rating,category_id) VALUES ('Vespa',600,4.5,2);
+INSERT INTO Product(name,price,rating,category_id) VALUES ('Harley VRod',26000,9.5,2);
+INSERT INTO Product(name,price,rating,category_id) VALUES ('Vespa',5000,8.5,2);
 
-INSERT INTO Product(name,price,rating,category_id) VALUES ('Falcon9',800,1.5,3);
-INSERT INTO Product(name,price,rating,category_id) VALUES ('Saturn5',1000,2.5,3);
+INSERT INTO Product(name,price,rating,category_id) VALUES ('Falcon9',2500000,8.5,3);
+INSERT INTO Product(name,price,rating,category_id) VALUES ('Saturn5',1100000000,10,3);
 
 --Data for User
 INSERT INTO Users(email,password,firstName,lastName) VALUES ('prabesh.kc@miu.edu','asdf','Prabesh','KC');

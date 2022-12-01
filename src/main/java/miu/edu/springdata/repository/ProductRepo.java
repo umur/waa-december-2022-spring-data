@@ -7,5 +7,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ProductRepo extends CrudRepository<Product, Integer> {
+    Iterable<Product> findByPriceGreaterThan(double minPrice);
 }
 
