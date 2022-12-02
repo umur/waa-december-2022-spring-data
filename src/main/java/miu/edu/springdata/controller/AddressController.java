@@ -1,6 +1,7 @@
 package miu.edu.springdata.controller;
 
 import lombok.RequiredArgsConstructor;
+import miu.edu.springdata.dto.AddressDto;
 import miu.edu.springdata.entity.Address;
 import miu.edu.springdata.service.AddressService;
 import org.springframework.web.bind.annotation.*;
@@ -19,12 +20,12 @@ public class AddressController {
     }
 
     @GetMapping
-    public List<Address> findAll() {
+    public List<AddressDto> findAll() {
         return addressService.findAll();
     }
 
     @GetMapping("/{id}")
-    public Address findById(@PathVariable int id) {
+    public AddressDto findById(@PathVariable int id) {
         return addressService.findById(id);
     }
 

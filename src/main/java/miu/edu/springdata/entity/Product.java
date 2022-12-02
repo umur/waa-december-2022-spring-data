@@ -20,10 +20,10 @@ public class Product {
     private double rating;
 
     @OneToMany(mappedBy = "product")
-    @JsonBackReference
+//    @JsonBackReference
     private List<Review> reviews;
 
     @ManyToOne
-    @JsonManagedReference
+//    @JsonManagedReference
     private Category category;
 }

@@ -13,6 +13,6 @@ public class Review {
     private String comment;
 
     @ManyToOne
-    @JsonManagedReference
+//    @JsonManagedReference
     private Product product;
 }

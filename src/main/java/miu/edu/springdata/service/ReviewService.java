@@ -1,13 +1,14 @@
 package miu.edu.springdata.service;
 
+import miu.edu.springdata.dto.ReviewDto;
 import miu.edu.springdata.entity.Review;
 
 import java.util.List;
 
 public interface ReviewService {
     void save(Review review);
-    List<Review> findAll();
-    Review findById(int id);
+    List<ReviewDto> findAll();
+    ReviewDto findById(int id);
     void deleteById(int id);
-    Iterable<Review> findReviewsByProductId(int productId);
+    List<ReviewDto> findReviewsByProductId(int productId);
 }

@@ -1,6 +1,7 @@
 package miu.edu.springdata.controller;
 
 import lombok.RequiredArgsConstructor;
+import miu.edu.springdata.dto.ProductDto;
 import miu.edu.springdata.entity.Product;
 import miu.edu.springdata.service.ProductService;
 import org.springframework.web.bind.annotation.*;
@@ -13,24 +14,23 @@ import java.util.List;
 public class ProductController {
     private final ProductService productService;
 
-    @PostMapping("/")
+    @PostMapping
     public void save(@RequestBody Product product) {
-
         productService.save(product);
     }
 
     @GetMapping
-    public List<Product> findAll() {
+    public List<ProductDto> findAll() {
         return productService.findAll();
     }
 
     @GetMapping("/{id}")
-    public Product findById(@PathVariable int id) {
+    public ProductDto findById(@PathVariable int id) {
         return productService.findById(id);
     }
 
     @PutMapping("/{id}")
-    public void save(@PathVariable int id, @RequestBody Product product) {
+    public void update(@PathVariable int id, @RequestBody Product product) {
         if (id > 0)
             product.setId(id);
         productService.save(product);
@@ -42,18 +42,18 @@ public class ProductController {
     }
 
     @GetMapping("/pricemorethan/{minPrice}")
-    public List<Product> findByPriceGreaterThan(@PathVariable double minPrice) {
+    public List<ProductDto> findByPriceGreaterThan(@PathVariable double minPrice) {
         return productService.findByPriceGreaterThan(minPrice);
     }
 
 
     @GetMapping("/filterby/category/{cat}/pricelessthan/{maxprice}")
-    public List<Product> findByPriceGreaterThan(@PathVariable String cat, @PathVariable double maxprice) {
+    public List<ProductDto> findByPriceGreaterThan(@PathVariable String cat, @PathVariable double maxprice) {
         return productService.findProductsByCategory_NameAndPriceLessThan(cat, maxprice);
     }
 
     @GetMapping("/namecontaining/{keyword}")
-    public Iterable<Product> findProductsByNameContaining(@PathVariable String keyword){
+    public List<ProductDto> findProductsByNameContaining(@PathVariable String keyword){
         return productService.findProductsByNameContaining(keyword);
     }
 

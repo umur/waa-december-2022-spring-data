@@ -1,6 +1,7 @@
 package miu.edu.springdata.controller;
 
 import lombok.RequiredArgsConstructor;
+import miu.edu.springdata.dto.ReviewDto;
 import miu.edu.springdata.entity.Review;
 import miu.edu.springdata.service.ReviewService;
 import org.springframework.web.bind.annotation.*;
@@ -19,12 +20,12 @@ public class ReviewController {
     }
 
     @GetMapping
-    public List<Review> findAll() {
+    public List<ReviewDto> findAll() {
         return reviewService.findAll();
     }
 
     @GetMapping("/{id}")
-    public Review findById(@PathVariable int id) {
+    public ReviewDto findById(@PathVariable int id) {
         return reviewService.findById(id);
     }
 
@@ -41,7 +42,7 @@ public class ReviewController {
     }
 
     @GetMapping("byProductId/{productId}")
-    Iterable<Review> findReviewsByProductId(@PathVariable int productId){
+    List<ReviewDto> findReviewsByProductId(@PathVariable int productId){
         return reviewService.findReviewsByProductId(productId);
     }
 }

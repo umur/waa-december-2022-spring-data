@@ -18,7 +18,7 @@ public class Category {
     private String name;
 
 //    @JoinColumn(name = "category_id")
-    @JsonBackReference
+//    @JsonBackReference
     @OneToMany(mappedBy = "category")
     private List<Product> products;
 }

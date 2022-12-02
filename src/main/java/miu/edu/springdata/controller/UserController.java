@@ -1,6 +1,7 @@
 package miu.edu.springdata.controller;
 
 import lombok.RequiredArgsConstructor;
+import miu.edu.springdata.dto.UserDto;
 import miu.edu.springdata.entity.User;
 import miu.edu.springdata.service.UserService;
 import org.springframework.web.bind.annotation.*;
@@ -19,12 +20,12 @@ public class UserController {
     }
 
     @GetMapping
-    public List<User> findAll() {
+    public List<UserDto> findAll() {
         return userService.findAll();
     }
 
     @GetMapping("/{id}")
-    public User findById(@PathVariable int id) {
+    public UserDto findById(@PathVariable int id) {
         return userService.findById(id);
     }
 
