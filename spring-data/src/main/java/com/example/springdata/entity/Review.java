@@ -13,8 +13,9 @@ public class Review {
     private int id;
     private String comment;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     private User user;
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
+    @JoinColumn(name="review_id")
     private Product product;
 }

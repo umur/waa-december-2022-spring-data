@@ -18,9 +18,9 @@ public class Product {
     private int price;
     private int rating;
 
-    @ManyToOne
+    @ManyToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     private Category category;
 
-    @OneToMany
+    @OneToMany(mappedBy = "product")
     private List<Review> reviews;
 }

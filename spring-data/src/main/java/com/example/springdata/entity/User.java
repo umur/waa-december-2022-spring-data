@@ -9,6 +9,7 @@ import java.util.List;
 @Entity
 @Setter
 @Getter
+@Table(name="user_table")
 public class User {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -18,10 +19,10 @@ public class User {
     private String firstName;
     private String lastName;
 
-    @OneToMany
+    @OneToMany(mappedBy = "user")
     private List<Review> reviews;
 
-    @OneToOne
+    @OneToOne(mappedBy = "user")
     private Address address;
 
 }

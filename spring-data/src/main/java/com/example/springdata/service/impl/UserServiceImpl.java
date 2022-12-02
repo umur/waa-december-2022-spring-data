@@ -6,6 +6,8 @@ import com.example.springdata.service.UserService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class UserServiceImpl implements UserService {
@@ -14,5 +16,10 @@ public class UserServiceImpl implements UserService {
     @Override
     public void save(User user) {
         userRepo.save(user);
+    }
+
+    @Override
+    public List<User> findAll() {
+        return (List<User>) userRepo.findAll();
     }
 }

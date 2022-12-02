@@ -15,6 +15,6 @@ public class Address {
     private String zip;
     private String city;
 
-    @OneToOne
+    @OneToOne(fetch = FetchType.LAZY,cascade = CascadeType.ALL)
     private User user;
 }
