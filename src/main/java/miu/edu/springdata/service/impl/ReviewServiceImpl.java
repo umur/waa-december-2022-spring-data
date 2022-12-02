@@ -32,4 +32,9 @@ public class ReviewServiceImpl implements ReviewService {
     public void deleteById(int id) {
         reviewRepo.deleteById(id);
     }
+
+    @Override
+    public Iterable<Review> findReviewsByProductId(int productId){
+        return reviewRepo.findReviewsByProductId(productId);
+    }
 }

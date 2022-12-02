@@ -1,7 +1,11 @@
 package miu.edu.springdata.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import java.util.List;
 
@@ -15,7 +19,11 @@ public class Product {
     private double price;
     private double rating;
 
-    @JoinColumn(name = "product_id")
-    @OneToMany
+    @OneToMany(mappedBy = "product")
+    @JsonBackReference
     private List<Review> reviews;
+
+    @ManyToOne
+    @JsonManagedReference
+    private Category category;
 }

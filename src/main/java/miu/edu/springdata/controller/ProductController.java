@@ -13,8 +13,9 @@ import java.util.List;
 public class ProductController {
     private final ProductService productService;
 
-    @PostMapping
+    @PostMapping("/")
     public void save(@RequestBody Product product) {
+
         productService.save(product);
     }
 
@@ -44,4 +45,17 @@ public class ProductController {
     public List<Product> findByPriceGreaterThan(@PathVariable double minPrice) {
         return productService.findByPriceGreaterThan(minPrice);
     }
+
+
+    @GetMapping("/filterby/category/{cat}/pricelessthan/{maxprice}")
+    public List<Product> findByPriceGreaterThan(@PathVariable String cat, @PathVariable double maxprice) {
+        return productService.findProductsByCategory_NameAndPriceLessThan(cat, maxprice);
+    }
+
+    @GetMapping("/namecontaining/{keyword}")
+    public Iterable<Product> findProductsByNameContaining(@PathVariable String keyword){
+        return productService.findProductsByNameContaining(keyword);
+    }
+
+
 }

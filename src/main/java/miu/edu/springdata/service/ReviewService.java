@@ -9,4 +9,5 @@ public interface ReviewService {
     List<Review> findAll();
     Review findById(int id);
     void deleteById(int id);
+    Iterable<Review> findReviewsByProductId(int productId);
 }

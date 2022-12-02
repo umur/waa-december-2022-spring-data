@@ -39,4 +39,9 @@ public class ReviewController {
     public void deleteById(@PathVariable int id) {
         reviewService.deleteById(id);
     }
+
+    @GetMapping("byProductId/{productId}")
+    Iterable<Review> findReviewsByProductId(@PathVariable int productId){
+        return reviewService.findReviewsByProductId(productId);
+    }
 }

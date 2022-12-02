@@ -10,4 +10,6 @@ public interface ProductService {
     Product findById(int id);
     void deleteById(int id);
     List<Product> findByPriceGreaterThan(double minPrice);
+    List<Product> findProductsByCategory_NameAndPriceLessThan(String cat, double maxPrice);
+    Iterable<Product> findProductsByNameContaining(String keyword);
 }
