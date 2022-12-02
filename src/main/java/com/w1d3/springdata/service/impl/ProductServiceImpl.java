@@ -31,4 +31,17 @@ public class ProductServiceImpl implements ProductService {
         productRepo.deleteById(id);
 
     }
+
+    public List<Product> findProductsMoreThanMinPrice(double minPrice){
+       return productRepo.findByPriceGreaterThan(minPrice);
+    }
+
+    public List<Product> findByCategoryAnAndPriceLessThan(String cat, double maxPrice){
+        return productRepo.findByCategory_NameIgnoreCaseAndPriceLessThan(cat,maxPrice);
+    }
+
+    @Override
+    public List<Product> findByNameContains(String keyword) {
+        return productRepo.findByNameContainsIgnoreCase(keyword);
+    }
 }

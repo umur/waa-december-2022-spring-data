@@ -38,4 +38,22 @@ public class ProductController {
         productService.deleteById(id);
     }
 
+    @GetMapping("/byPrice/{minPrice}")
+    public List<Product> findProductsMoreThanMinPrice(@PathVariable double minPrice){
+        return productService.findProductsMoreThanMinPrice(minPrice);
+    }
+
+    @GetMapping("/categoryname/{cat}/maxprice/{maxPrice}")
+    public List<Product> findProductsByCategoryAndPrice(@PathVariable String cat,@PathVariable double maxPrice){
+        return productService.findByCategoryAnAndPriceLessThan(cat,maxPrice);
+    }
+
+    @GetMapping("/name/contains/{keyword}")
+    public List<Product> findByNameContains(@PathVariable String keyword){
+        return productService.findByNameContains(keyword);
+    }
+
+
+
+
 }

@@ -1,5 +1,7 @@
 package com.w1d3.springdata.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.RequiredArgsConstructor;
@@ -20,9 +22,10 @@ public class Product {
     private String name;
     private double price;
     private int rating;
-    @OneToMany
-    @JoinColumn(name = "productId")
+    @OneToMany(mappedBy = "product")
+    @JsonBackReference
     List<Review> reviews;
     @ManyToOne
+    @JsonManagedReference
      private Category category;
 }

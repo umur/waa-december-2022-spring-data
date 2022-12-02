@@ -16,7 +16,7 @@ INSERT INTO Product(name,price,rating,category_id) VALUES ('Samsung Tablet',1000
 INSERT INTO Product(name,price,rating,category_id) VALUES ('Apple Tablet',1200,6,3);
 
 --Data for User
-INSERT INTO Users(email,password,firstName,lastName) VALUES ('use1@miu.edu','1234','User','One');
+INSERT INTO Users(email,password,firstName,lastName) VALUES ('user1@miu.edu','1234','User','One');
 INSERT INTO Users(email,password,firstName,lastName) VALUES ('user2@miu.edu','1234','User','Two');
 
 --Data for Address

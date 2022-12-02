@@ -9,4 +9,10 @@ public interface ProductService {
     List<Product> findAll();
     Product findById(int id);
     void deleteById(int id);
+
+    List<Product> findProductsMoreThanMinPrice(double minPrice);
+
+    List<Product> findByCategoryAnAndPriceLessThan(String cat, double maxPrice);
+
+    List<Product> findByNameContains(String keyword);
 }
