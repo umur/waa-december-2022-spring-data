@@ -1,5 +1,6 @@
 package com.example.lab3springdata.entity;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.OneToMany;
@@ -18,6 +19,7 @@ public class Address {
     private String city;
 
     @OneToOne (mappedBy = "address")
+    @JsonIgnoreProperties("address")
     private User user;
 
 }

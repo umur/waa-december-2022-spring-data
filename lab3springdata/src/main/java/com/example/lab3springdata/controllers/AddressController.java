@@ -1,8 +1,8 @@
 package com.example.lab3springdata.controllers;
 
+import com.example.lab3springdata.dto.addressDto.AddressBasicDto;
 import com.example.lab3springdata.entity.Address;
 import com.example.lab3springdata.services.impl.AddressServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -18,22 +18,25 @@ public class AddressController {
     }
 
     @GetMapping
-    public List<Address> getAll(){
+    public List<AddressBasicDto> getAll(){
 
         return addressService.getAll();
     }
    @GetMapping("/{id}")
-   public Address getById(@PathVariable int id){
+   public AddressBasicDto getById(@PathVariable int id){
         return addressService.getById(id);
    }
-    @PutMapping("/{id}")
-    public void update(@PathVariable int id, @RequestBody Address address){
-        addressService.update(id,address);
-}
-    @PostMapping
-    public void create(@RequestBody Address address){
-        addressService.save(address);
+
+   @PostMapping
+    public void create(@RequestBody AddressBasicDto addressDto){
+        addressService.save(addressDto);
     }
+
+    @PutMapping("/{id}")
+    public void update(@PathVariable int id, @RequestBody AddressBasicDto addressDto){
+        addressService.update(id,addressDto);
+}
+
 
     @DeleteMapping("/{id}")
     public String delete(@PathVariable int id){

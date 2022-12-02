@@ -1,9 +1,10 @@
 package com.example.lab3springdata.services.impl;
 
+import com.example.lab3springdata.dto.addressDto.AddressBasicDto;
 import com.example.lab3springdata.entity.Address;
 import com.example.lab3springdata.repository.AddressRepo;
 import com.example.lab3springdata.services.AddressService;
-import org.springframework.beans.factory.annotation.Autowired;
+import org.modelmapper.ModelMapper;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -11,30 +12,41 @@ import java.util.List;
 @Service
 public class AddressServiceImpl implements AddressService {
     private final AddressRepo addressRepo;
+    private final ModelMapper modelMapper;
 
-    public AddressServiceImpl(AddressRepo addressRepo) {
+    public AddressServiceImpl(AddressRepo addressRepo, ModelMapper modelMapper) {
         this.addressRepo = addressRepo;
+        this.modelMapper = modelMapper;
     }
 
     @Override
-    public Address getById(int id) {
+    public AddressBasicDto getById(int id) {
         Address address= addressRepo.findById(id).get();
-        return address;
+        return modelMapper.map(address,AddressBasicDto.class);
     }
 
     @Override
-    public List<Address> getAll() {
-        List<Address> list = (List<Address>) addressRepo.findAll();
-        return list;
+    public List<AddressBasicDto> getAll() {
+        List<Address> addressList = (List<Address>) addressRepo.findAll();
+        return addressList
+                .stream()
+                .map(
+                        address->modelMapper
+                                .map(address,AddressBasicDto.class))
+                .toList();
     }
 
     @Override
-    public void save(Address address) {
+    public void save(AddressBasicDto addressDto) {
+        Address address = modelMapper.map(addressDto,Address.class);
         addressRepo.save(address);
     }
 
     @Override
-    public void update(int id, Address address) {
+    public void update(int id, AddressBasicDto addressDto) {
+
+       Address address = modelMapper.map(addressDto,Address.class);
+
        Address oldAddress = addressRepo.findById(id).get();
        addressRepo.delete(oldAddress);
        address.setId(id);

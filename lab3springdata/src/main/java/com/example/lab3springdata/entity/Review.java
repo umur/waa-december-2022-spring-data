@@ -1,8 +1,12 @@
 package com.example.lab3springdata.entity;
 
+import com.fasterxml.jackson.annotation.JsonBackReference;
 import com.fasterxml.jackson.annotation.JsonIgnore;
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.Cascade;
 
 @Entity
 @Data
@@ -12,10 +16,12 @@ public class Review {
     private String comment;
 
     @ManyToOne
-    @JsonIgnore
+   // @JsonBackReference //ignores json
+    //@JsonManagedReference
+    @JsonIgnoreProperties("reviews")
     private Product product;
 
     @ManyToOne
-    @JoinColumn(name = "user_id")
+    @JsonIgnoreProperties("reviews")
     private User user;
 }
