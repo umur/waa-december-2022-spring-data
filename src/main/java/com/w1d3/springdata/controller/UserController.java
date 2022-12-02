@@ -1,5 +1,6 @@
 package com.w1d3.springdata.controller;
 
+import com.w1d3.springdata.dto.UserDto;
 import com.w1d3.springdata.entity.User;
 import com.w1d3.springdata.service.UserService;
 import lombok.RequiredArgsConstructor;
@@ -14,12 +15,12 @@ public class UserController {
     private final UserService userService;
 
     @GetMapping
-    public List<User> getAll() {
+    public List<UserDto> getAll() {
         return userService.findAll();
     }
 
     @GetMapping("{id}")
-    public User getById(@PathVariable int id) {
+    public UserDto getById(@PathVariable int id) {
         return userService.findById(id);
     }
 

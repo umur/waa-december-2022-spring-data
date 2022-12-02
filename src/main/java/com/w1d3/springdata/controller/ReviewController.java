@@ -1,5 +1,6 @@
 package com.w1d3.springdata.controller;
 
+import com.w1d3.springdata.dto.ReviewDto;
 import com.w1d3.springdata.entity.Review;
 import com.w1d3.springdata.service.ReviewService;
 import lombok.RequiredArgsConstructor;
@@ -19,12 +20,12 @@ public class ReviewController {
     }
 
     @GetMapping
-    public List<Review> findAll() {
+    public List<ReviewDto> findAll() {
         return reviewService.findAll();
     }
 
     @GetMapping("/{id}")
-    public Review findById(@PathVariable int id) {
+    public ReviewDto findById(@PathVariable int id) {
         return reviewService.findById(id);
     }
 
@@ -41,7 +42,7 @@ public class ReviewController {
     }
 
     @GetMapping("/product/{id}")
-    public List<Review> reviewsByProductId(@PathVariable int id){
+    public List<ReviewDto> reviewsByProductId(@PathVariable int id){
        return reviewService.reviewsByProductId(id);
     }
 }

@@ -1,5 +1,6 @@
 package com.w1d3.springdata.controller;
 
+import com.w1d3.springdata.dto.ProductDto;
 import com.w1d3.springdata.entity.Product;
 import com.w1d3.springdata.service.ProductService;
 import lombok.RequiredArgsConstructor;
@@ -14,11 +15,11 @@ public class ProductController {
     private final ProductService productService;
 
     @GetMapping
-    public List<Product> findAll(){
+    public List<ProductDto> findAll(){
         return productService.findAll();
     }
     @GetMapping("/{id}")
-    public Product findById(@PathVariable int id){
+    public ProductDto findById(@PathVariable int id){
       return  productService.findById(id);
     }
 
@@ -39,17 +40,17 @@ public class ProductController {
     }
 
     @GetMapping("/byPrice/{minPrice}")
-    public List<Product> findProductsMoreThanMinPrice(@PathVariable double minPrice){
+    public List<ProductDto> findProductsMoreThanMinPrice(@PathVariable double minPrice){
         return productService.findProductsMoreThanMinPrice(minPrice);
     }
 
     @GetMapping("/categoryname/{cat}/maxprice/{maxPrice}")
-    public List<Product> findProductsByCategoryAndPrice(@PathVariable String cat,@PathVariable double maxPrice){
+    public List<ProductDto> findProductsByCategoryAndPrice(@PathVariable String cat,@PathVariable double maxPrice){
         return productService.findByCategoryAnAndPriceLessThan(cat,maxPrice);
     }
 
     @GetMapping("/name/contains/{keyword}")
-    public List<Product> findByNameContains(@PathVariable String keyword){
+    public List<ProductDto> findByNameContains(@PathVariable String keyword){
         return productService.findByNameContains(keyword);
     }
 

@@ -1,5 +1,6 @@
 package com.w1d3.springdata.controller;
 
+import com.w1d3.springdata.dto.AddressDto;
 import com.w1d3.springdata.entity.Address;
 import com.w1d3.springdata.service.AddressService;
 import lombok.RequiredArgsConstructor;
@@ -14,13 +15,13 @@ public class AddressController {
     private final AddressService addressService;
 
     @GetMapping
-    public List<Address> findAll()
+    public List<AddressDto> findAll()
     {
         return addressService.findAll();
     }
 
     @GetMapping("/{id}")
-    public Address findById(@PathVariable int id){
+    public AddressDto findById(@PathVariable int id){
         return addressService.findById(id);
     }
     @PostMapping
