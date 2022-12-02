@@ -1,5 +1,5 @@
 package com.example.lab3springdata.controllers;
-import com.example.lab3springdata.entity.Category;
+import com.example.lab3springdata.dto.categoryDto.CategoryBasicDto;
 import com.example.lab3springdata.services.impl.CategoryServiceImpl;
 import org.springframework.web.bind.annotation.*;
 
@@ -16,21 +16,21 @@ public class CategoryController {
     }
 
     @GetMapping
-    public List<Category> getAll(){
+    public List<CategoryBasicDto> getAll(){
 
         return categoryService.getAll();
     }
     @GetMapping("/{id}")
-    public Category getById(@PathVariable int id){
+    public CategoryBasicDto getById(@PathVariable int id){
         return categoryService.getById(id);
     }
     @PutMapping("/{id}")
-    public void update(@PathVariable int id, @RequestBody Category category){
-        categoryService.update(id,category);
+    public void update(@PathVariable int id, @RequestBody CategoryBasicDto categoryDto){
+        categoryService.update(id,categoryDto);
     }
     @PostMapping
-    public void create(@RequestBody Category category){
-        categoryService.save(category);
+    public void create(@RequestBody CategoryBasicDto categoryDto){
+        categoryService.save(categoryDto);
     }
 
     @DeleteMapping("/{id}")
