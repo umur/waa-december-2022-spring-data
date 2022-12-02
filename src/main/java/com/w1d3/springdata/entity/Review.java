@@ -15,7 +15,7 @@ public class Review {
     private int id;
     private String comment;
     @ManyToOne
-    @JsonManagedReference
+    //@JsonManagedReference
     private Product product;
 
 }

@@ -18,6 +18,6 @@ public class Category {
     private int id;
     private String name;
     @OneToMany(mappedBy = "category")
-    @JsonBackReference
+    //@JsonBackReference
     private List<Product> products;
 }
