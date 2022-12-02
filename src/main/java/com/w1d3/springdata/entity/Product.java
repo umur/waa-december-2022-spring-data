@@ -21,7 +21,8 @@ public class Product {
     private double price;
     private int rating;
     @OneToMany
+    @JoinColumn(name = "productId")
     List<Review> reviews;
     @ManyToOne
-     Category category;
+     private Category category;
 }

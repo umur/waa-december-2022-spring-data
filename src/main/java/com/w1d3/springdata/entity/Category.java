@@ -6,8 +6,6 @@ import lombok.RequiredArgsConstructor;
 import lombok.Setter;
 
 import java.util.List;
-
-
 @Entity
 @Getter
 @Setter
@@ -17,6 +15,7 @@ public class Category {
     @GeneratedValue(strategy= GenerationType.IDENTITY)
     private int id;
     private String name;
+    @MapKeyColumn
     @OneToMany(mappedBy = "category")
     List<Product> products;
 }

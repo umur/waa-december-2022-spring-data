@@ -1,4 +1,13 @@
 package com.w1d3.springdata.service;
 
+import com.w1d3.springdata.entity.User;
+
+import java.util.List;
+
 public interface UserService {
+    List<User> findAll();
+    void save(User user);
+    User findById(int id);
+    void deleteById(int id);
+
 }

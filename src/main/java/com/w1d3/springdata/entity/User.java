@@ -12,16 +12,17 @@ import java.util.List;
 @Getter
 @Setter
 @RequiredArgsConstructor
+@Table(name = "users")
 public class User {
     @Id
     @GeneratedValue(strategy=GenerationType.IDENTITY)
     private int id;
     private String email;
     private String password;
-    private String firstName;
-    private String lastName;
+    private String firstname;
+    private String lastname;
     @OneToMany
-    List<Review> reviewList;
-    @OneToOne
-    private Address address;
+            @JoinColumn(name = "userId")
+    List<Review> reviews;
+
 }

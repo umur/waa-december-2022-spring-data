@@ -1,4 +1,10 @@
 package com.w1d3.springdata.repository;
 
-public class CategoryRepo {
+import com.w1d3.springdata.entity.Category;
+import org.springframework.data.repository.CrudRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface CategoryRepo extends CrudRepository<Category,Integer> {
+
 }
