@@ -1,4 +1,4 @@
 package com.ujjwal.humagain.springdata.repository;
 
-public interface UserService {
+public interface UserRepository {
 }
