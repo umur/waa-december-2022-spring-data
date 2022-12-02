@@ -1,0 +1,54 @@
+[
+  {
+    "id": 53,
+    "name": "lock",
+    "price": 3450.4,
+    "rating": 6,
+    "category": {
+      "id": 3,
+      "name": "Accesories"
+    },
+    "reviews": [
+      {
+        "id": 202,
+        "comment": "good mobiel"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "name": "battery",
+    "price": 3450.4,
+    "rating": 6,
+    "category": {
+      "id": 3,
+      "name": "Accesories"
+    },
+    "reviews": [
+      {
+        "id": 203,
+        "comment": "battery mobiel"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "name": "nepal",
+    "price": 3450.4,
+    "rating": 6,
+    "category": {
+      "id": 3,
+      "name": "Accesories"
+    },
+    "reviews": [
+      {
+        "id": 3,
+        "comment": "battery comment"
+      },
+      {
+        "id": 204,
+        "comment": "battery mobiel"
+      }
+    ]
+  }
+]
