@@ -1,4 +1,5 @@
 package com.example.lab3springdata.dto.userDto;
+import com.example.lab3springdata.entity.Review;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -13,6 +14,7 @@ public class UserBasicDto {
     private String password;
     private String firstName;
     private String lastname;
+    private List<Review> reviews;
 
 
 }

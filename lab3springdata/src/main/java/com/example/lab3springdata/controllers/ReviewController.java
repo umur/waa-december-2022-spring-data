@@ -1,13 +1,12 @@
 package com.example.lab3springdata.controllers;
 
-import com.example.lab3springdata.entity.Review;
+import com.example.lab3springdata.dto.reviewDto.ReviewBasicDto;
 import com.example.lab3springdata.services.impl.ReviewServiceImpl;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@RequestMapping("/reviews")
+@RequestMapping("/reviewes")
 @RestController
 public class ReviewController {
     private final ReviewServiceImpl reviewService;
@@ -18,22 +17,25 @@ public class ReviewController {
     }
 
     @GetMapping
-    public List<Review> getAll(){
+    public List<ReviewBasicDto> getAll(){
 
         return reviewService.getAll();
     }
     @GetMapping("/{id}")
-    public Review getById(@PathVariable int id){
+    public ReviewBasicDto getById(@PathVariable int id){
         return reviewService.getById(id);
     }
-    @PutMapping("/{id}")
-    public void update(@PathVariable int id, @RequestBody Review review){
-        reviewService.update(id,review);
-    }
+
     @PostMapping
-    public void create(@RequestBody Review review){
-        reviewService.save(review);
+    public void create(@RequestBody ReviewBasicDto reviewDto){
+        reviewService.save(reviewDto);
     }
+
+    @PutMapping("/{id}")
+    public void update(@PathVariable int id, @RequestBody ReviewBasicDto reviewDto){
+        reviewService.update(id,reviewDto);
+    }
+
 
     @DeleteMapping("/{id}")
     public String delete(@PathVariable int id){

@@ -7,11 +7,12 @@ import jakarta.persistence.OneToMany;
 import jakarta.persistence.OneToOne;
 import lombok.Data;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Data
-public class Address {
+public class Address implements Serializable {
     @Id
     private int id;
     private String street;

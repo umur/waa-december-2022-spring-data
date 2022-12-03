@@ -8,9 +8,11 @@ import jakarta.persistence.*;
 import lombok.Data;
 import org.hibernate.annotations.Cascade;
 
+import java.io.Serializable;
+
 @Entity
 @Data
-public class Review {
+public class Review implements Serializable {
     @Id
     private int id;
     private String comment;
@@ -21,7 +23,7 @@ public class Review {
     @JsonIgnoreProperties("reviews")
     private Product product;
 
-    @ManyToOne
-    @JsonIgnoreProperties("reviews")
-    private User user;
+//    @ManyToOne
+//    @JsonIgnoreProperties("reviews")
+//    private User user;
 }

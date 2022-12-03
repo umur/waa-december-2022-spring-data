@@ -1,29 +1,30 @@
 package com.example.lab3springdata.entity;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
 import jakarta.persistence.*;
 import lombok.Data;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
+import java.io.Serializable;
 import java.util.List;
 
 @Entity
 @Data
-public class Product {
+public class Product implements Serializable {
     @Id
     private int id;
     private String name;
     private int price;
     private int rating;
 
-    @ManyToOne
-    @JsonIgnoreProperties("products")
-    private Category category;
+//    @ManyToOne
+//    @JsonIgnoreProperties("products")
+//    private Category category;
 
 
-    @OneToMany(mappedBy = "product")
+    @OneToMany(mappedBy = "product",fetch = FetchType.EAGER)
+   @Fetch(FetchMode.JOIN)
     //@JsonManagedReference
    //@JsonBackReference
     @JsonIgnoreProperties("product")

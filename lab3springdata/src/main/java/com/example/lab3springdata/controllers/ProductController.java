@@ -1,5 +1,6 @@
 package com.example.lab3springdata.controllers;
 
+import com.example.lab3springdata.dto.productDto.ProductBasicDto;
 import com.example.lab3springdata.entity.Product;
 import com.example.lab3springdata.services.impl.ProductServiceImpl;
 import org.springframework.web.bind.annotation.*;
@@ -17,22 +18,25 @@ public class ProductController {
     }
 
     @GetMapping
-    public List<Product> getAll(){
+    public List<ProductBasicDto> getAll(){
 
         return productService.getAll();
     }
     @GetMapping("/{id}")
-    public Product getById(@PathVariable int id){
+    public ProductBasicDto getById(@PathVariable int id){
         return productService.getById(id);
     }
-    @PutMapping("/{id}")
-    public void update(@PathVariable int id, @RequestBody Product product){
-        productService.update(id,product);
-    }
+
     @PostMapping
-    public void create(@RequestBody Product product){
-        productService.save(product);
+    public void create(@RequestBody ProductBasicDto productDto){
+        productService.save(productDto);
     }
+
+    @PutMapping("/{id}")
+    public void update(@PathVariable int id, @RequestBody ProductBasicDto productDto){
+        productService.update(id,productDto);
+    }
+
 
     @DeleteMapping("/{id}")
     public String delete(@PathVariable int id){
