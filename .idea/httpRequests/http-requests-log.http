@@ -1,0 +1,1410 @@
+GET http://localhost:8080/products
+
+<> 2022-12-01T215718.200.json
+
+###
+
+GET http://localhost:8080/products
+
+<> 2022-12-01T215449.200.json
+
+###
+
+GET http://localhost:8080/products
+
+<> 2022-12-01T215354.200.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "Phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T212639.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {}
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T205540.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T205525.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T203519.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T203508.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {}
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T203441.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {}
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T203344.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+//    "id": 1,
+//    "name": "phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T203338.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T203318.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {}
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T202955.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T202944.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T202918.405.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T202449.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T202422.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T195840.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T195809.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T195744.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  }
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+<> 2022-12-01T195714.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3
+}
+
+//{
+//  "name": "iphone 14",
+//  "price": 2000,
+//  "rating": 3 //,
+////  "category": {
+////    "id": 1,
+////    "name": "phone",
+////    "products": []
+////  },
+////  "reviews": [
+////    {
+////      "id": 1,
+////      "comment": "",
+////      "product": 1,
+////      "user1": 1
+////    }
+////  ]
+//}
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3 //,
+//  "category": {
+//    "id": 1,
+//    "name": "phone",
+//    "products": []
+//  },
+//  "reviews": [
+//    {
+//      "id": 1,
+//      "comment": "",
+//      "product": 1,
+//      "user1": 1
+//    }
+//  ]
+}
+
+<> 2022-12-01T195521.400.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3 //,
+//  "category": {
+//    "id": 1,
+//    "name": "phone",
+//    "products": []
+//  },
+//  "reviews": [
+//    {
+//      "id": 1,
+//      "comment": "",
+//      "product": 1,
+//      "user1": 1
+//    }
+//  ]
+}
+
+<> 2022-12-01T195514.415.json
+
+###
+
+POST http://localhost:8080/products
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T195402.415.json
+
+###
+
+POST http://localhost:8080/products
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T195357.415.json
+
+###
+
+POST http://localhost:8080/products
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T195350.415.json
+
+###
+
+POST http://localhost:8080/products
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T195347.415.json
+
+###
+
+POST http://localhost:8080/products
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T195344.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T195336.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T195326.415.json
+
+###
+
+POST http://localhost:8080/products
+Content-Type: application/json
+
+{
+  "name": "iphone 14",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T150137.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T143935.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T143818.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T143813.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T143810.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T143723.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T143707.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T143603.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone",
+    "products": []
+  },
+  "reviews": [
+    {
+      "id": 1,
+      "comment": "",
+      "product": 1,
+      "user1": 1
+    }
+  ]
+}
+
+<> 2022-12-01T143540.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  },
+  "reviews": [{
+    "id": 1,
+    "comment": ""
+  }]
+}
+
+<> 2022-12-01T143414.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  },
+  "reviews": [{
+    "id": 1,
+    "comment": ""
+  }]
+}
+
+<> 2022-12-01T143350.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  },
+  "reviews": [{
+    "id": 1,
+    "comment": ""
+  }]
+}
+
+<> 2022-12-01T143338.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "id": 1,
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  },
+  "reviews": {
+    "id": 1,
+    "comment": ""
+  }
+}
+
+<> 2022-12-01T143254.415.json
+
+###
+
+PUT http://localhost:8080/products/1
+Content-Type: application/json
+
+{
+  "name": "iphone XIII",
+  "price": 2000,
+  "rating": 3,
+  "category": {
+    "id": 1,
+    "name": "phone"
+  },
+  "reviews": {
+    "id": 1,
+    "comment": ""
+  }
+}
+
+<> 2022-12-01T143240.415.json
+
+###
+

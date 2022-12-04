@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Iphone X",
+    "price": 900,
+    "rating": 4
+  },
+  {
+    "name": "Iphone XI",
+    "price": 1000,
+    "rating": 5
+  },
+  {
+    "name": "Iphone XII",
+    "price": 1100,
+    "rating": 3
+  },
+  {
+    "name": "Macbook air",
+    "price": 2000,
+    "rating": 5
+  }
+]

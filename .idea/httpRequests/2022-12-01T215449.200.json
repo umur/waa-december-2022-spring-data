@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Iphone X",
+    "price": 900,
+    "rating": 4,
+    "category": {
+      "id": 1,
+      "name": "Phone"
+    }
+  },
+  {
+    "name": "Iphone XI",
+    "price": 1000,
+    "rating": 5,
+    "category": {
+      "id": 1,
+      "name": "Phone"
+    }
+  },
+  {
+    "name": "Iphone XII",
+    "price": 1100,
+    "rating": 3,
+    "category": {
+      "id": 1,
+      "name": "Phone"
+    }
+  },
+  {
+    "name": "Macbook air",
+    "price": 2000,
+    "rating": 5,
+    "category": {
+      "id": 2,
+      "name": "Laptop"
+    }
+  }
+]
