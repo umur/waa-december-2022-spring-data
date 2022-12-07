@@ -10,5 +10,8 @@ import java.util.List;
 @Repository
 public interface ProductRepo extends CrudRepository<Product,Integer> {
     public List<Product> findByPriceGreaterThan(double minPrice);
+
+    public  List<Product> findByPriceLessThan(int maxPrice);
     public List<Product> findByName(String name);
+    public  List<Product> findProduct_ReviewsById(int id);
 }
