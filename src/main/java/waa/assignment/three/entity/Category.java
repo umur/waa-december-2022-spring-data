@@ -17,8 +17,7 @@ public class Category {
     private String name;
 
 
-    @OneToMany
-    @JoinColumn(name = "category_id")
+    @OneToMany(mappedBy = "category",cascade = CascadeType.PERSIST)
     private List<Product> products;
 
 }

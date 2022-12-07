@@ -4,6 +4,8 @@ package waa.assignment.three.controller;
 import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import waa.assignment.three.dto.ReviewDto;
+import waa.assignment.three.entity.MainUser;
+import waa.assignment.three.repository.ReviewRepository;
 import waa.assignment.three.service.ReviewService;
 
 import java.util.List;
@@ -13,6 +15,7 @@ import java.util.List;
 @RequiredArgsConstructor
 public class ReviewController {
     private final ReviewService reviewService;
+    private final ReviewRepository reviewRepository;
 
 
     @PostMapping
@@ -44,4 +47,5 @@ public class ReviewController {
     public List<ReviewDto> getReviewsByProductId(@PathVariable long id) {
         return reviewService.getReviewsByProductId(id);
     }
+
 }
