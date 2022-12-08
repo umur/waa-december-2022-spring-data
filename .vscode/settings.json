@@ -1,0 +1,17 @@
+{
+    "java.compile.nullAnalysis.mode": "automatic",
+    "java.configuration.updateBuildConfiguration": "automatic",
+    "sqltools.connections": [
+        {},
+        {
+            "previewLimit": 50,
+            "server": "localhost",
+            "port": 55000,
+            "driver": "PostgreSQL",
+            "name": "localhost:55000",
+            "database": "waa-lab3",
+            "username": "postgres",
+            "password": "postgrespw"
+        }
+    ]
+}
