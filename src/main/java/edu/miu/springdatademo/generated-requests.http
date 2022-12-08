@@ -1,0 +1,14 @@
+###
+GET http://localhost:8080/products
+
+###
+GET http://localhost:8080/products/filterby?price=500
+
+###
+GET http://localhost:8080/products/filterby?price=900&cat=category2
+
+###
+GET http://localhost:8080/products/filterby?subname=1
+
+###
+GET http://localhost:8080/products/1/reviews
